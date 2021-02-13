@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "minetest_packages"
+version = "0.1.0"
+description = "Minetest content fetching, processing and management library."
+authors = ["Gustavo6046 <rehermann6046@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+anyjson = "^0.3.3"
+attrs = "^20.3.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.6.0"
+flake8 = "^3.8.4"
+black = "^20.8b1"
+isort = "^5.7.0"
+bandit = "^1.7.0"
+mypy = "^0.800"
+pytest = "^6.2.2"
+typing-extensions = "^3.7.4"
+rope = "^0.18.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile='black'
+src_paths='minetest_packages'
